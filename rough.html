@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technoroift Employee Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            padding: 20px;
+        }
+        
+        .card-container {
+            width: 100%;
+            max-width: 400px;
+        }
+        
+        .card {
+            background: linear-gradient(135deg, #4fc3f7, #29b6f6, #03a9f4);
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+            color: white;
+            padding: 25px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 60%);
+            transform: rotate(10deg);
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .company-name {
+            font-size: 22px;
+            font-weight: 700;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+        
+        .logo {
+            width: 50px;
+            height: 50px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: #03a9f4;
+            font-size: 18px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card-body {
+            display: flex;
+            margin-bottom: 25px;
+            position: relative;
+        }
+        
+        .employee-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 10px;
+            border: 4px solid white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            object-fit: cover;
+            background: #e3f2fd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            color: #03a9f4;
+        }
+        
+        .employee-info {
+            margin-left: 20px;
+            flex: 1;
+        }
+        
+        .employee-name {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+        
+        .employee-title {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-bottom: 15px;
+        }
+        
+        .detail-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        
+        .detail-item i {
+            margin-right: 10px;
+            width: 20px;
+            text-align: center;
+        }
+        
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            padding-top: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .validity {
+            font-size: 13px;
+            opacity: 0.9;
+        }
+        
+        .blood-group {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        
+        .card-background {
+            position: absolute;
+            bottom: -30px;
+            right: -30px;
+            opacity: 0.1;
+            font-size: 180px;
+            transform: rotate(15deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-header">
+                <div class="company-name">Technoroift</div>
+                <div class="logo">TR</div>
+            </div>
+            
+            <div class="card-body">
+                <div class="employee-photo">
+                    <i class="fas fa-user"></i>
+                </div>
+                
+                <div class="employee-info">
+                    <h2 class="employee-name">Alex Johnson</h2>
+                    <div class="employee-title">Senior Software Developer</div>
+                    
+                    <div class="detail-item">
+                        <i class="far fa-envelope"></i>
+                        <span>alex.j@technoroift.com</span>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Tech Street, Silicon Valley, CA</span>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-footer">
+                <div class="validity">
+                    <div>VALID THRU</div>
+                    <div>12/2025</div>
+                </div>
+                
+                <div class="blood-group">
+                    <div>BLOOD GROUP</div>
+                    <div>O+</div>
+                </div>
+            </div>
+            
+            <div class="card-background">
+                <i class="fas fa-microchip"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

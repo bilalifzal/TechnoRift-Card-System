@@ -1,0 +1,153 @@
+<?php
+
+
+include("connect.php");
+
+
+if(isset($_POST['Go'])){
+
+$id=$_POST['id'];
+
+$query="SELECT `User id` FROM user WHERE `User id` ='".mysqli_real_escape_string($link,$id)."' LIMIT 1";
+$result=mysqli_query($link,$query);
+if(mysqli_num_rows($result)>0){
+    header("location:deply.php?id=" . urlencode($id) );
+}
+
+
+}
+?>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="index.css">
+    <title>Card Generator</title>
+</head>
+<body>
+       <nav>
+    <div class="n-1">
+    <img src="technorift.png" alt="">
+    </div>
+
+    <div class="n-2">
+        <div class="link">
+            <ul>
+                <li><button class="nav-btn">Admin</button></li>
+                <li class="set"><i class="fa-solid fa-right-from-bracket"></i> Logout</li>
+                <li class="set"><i class="fa-solid fa-gear"></i>Setting</li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    
+<div class="container" style=" display: flex;
+    justify-content: space-between;
+    margin-top: 50px;">
+    <div class="re-left">
+        <form action="" method="post">
+        <input type="text" name="id" id="" placeholder="Enter Employey ID" class="form-control"><br>
+        <a href=""><button class="nav-btn" style="width: 140px;" name="Go">Generate</button></a>
+        </form>
+    </div>
+    <div class="re-right">
+        <!-- <div class="status">
+            <h3>Your Card Status:
+
+            </h3>
+            <p>
+                Your Card Has been Generated you can print & Download here. <a href="card.html">Download</a>
+            </p>
+        </div> -->
+        <img src="Leadership Customizable Isometric Illustrations _ Amico Style.jfif" alt="">
+    </div>
+</div>
+
+
+<div class="container">
+    <h1>Terms & Policy</h1>
+    <ul >
+        <li style="list-style:inside;">Terms of Service & Privacy Policy
+
+By accessing and utilizing our card generation services, you expressly agree to be bound by the following terms: all user-generated content, including text, images, and designs uploaded or created on our platform, remains your intellectual property; however, you grant us a perpetual, worldwide, non-exclusive royalty-free license to use, store, and display that content solely for the purpose of providing and improving our service. You are strictly prohibited from using our platform to create content that is unlawful, defamatory, obscene, harassing, or that infringes upon any third party's rights. We utilize cookies and collect minimal personal data, such as your email address and design preferences, exclusively for account management, service functionality, and personalized experience; this data is never sold to third parties but may be shared with trusted payment processors and cloud hosting providers to facilitate our operations. All payments processed are final and non-refundable, and we reserve the right to terminate accounts for any violation of these terms at our sole discretion. We provide our service on an "as-is" basis and disclaim all warranties for the continuous availability or error-free performance of the platform.
+
+</li>
+        <li style="list-style:inside;">By accessing and using this website and its card generation services, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions.</li>
+        <li style="list-style:inside;">The card templates, designs, graphics, layout, and website code are the exclusive property of our company and are protected by intellectual property laws.You may not copy, redistribute, or reverse-engineer our platform or template designs for any commercial purpose.</li>
+    </ul>
+
+
+    <input type="checkbox" name="" id=""> <strong>Accepted And Agreed With These Rules.</strong>
+</div>
+
+
+
+ <footer style="margin-top: 40px;">
+    
+        <div class="footer-1">
+ <h1>TechnoRift</h1>
+        </div>
+         
+        <div class="footer-2">
+            <ul>
+                <li><h3>Company</h3></li>
+                <li><p>Home</p></li>
+                <li><p>About us</p></li>
+                <li><p>Contact us</p></li>
+                <li><p>Featues</p></li>
+            </ul>
+        </div>
+
+
+          <div class="footer-3">
+            <ul>
+                <li><h3>Support</h3></li>
+                <li><p>FAQs</p></li>
+                <li><p>Help Center</p></li>
+                <li><p>Contact Support</p></li>
+            </ul>
+        </div>
+
+
+           <div class="footer-4">
+            <ul>
+                <li><h3>Legal</h3></li>
+                <li><p>privacy Policy</p></li>
+                <li><p>Terms Of Use</p></li>
+                <li><p>Disclaimer</p></li>
+            </ul>
+        </div>
+
+       
+    </footer>
+  
+
+
+      <div class="sub-footer" style="color: white ; text-align: center; background: linear-gradient(to right,
+#212024
+,
+#287a9a ); padding: 10px;" >
+<!-- <hr style="width: 100%; color: white; height: 3px;"> -->
+    <p>All Rights Reserved By M.bilal Ifzal || mbilalifzal82@gmail.com</p>
+
+      <a href="">
+    <i class="fa-brands fa-facebook"></i></a>
+    <a href="">
+    <i class="fa-brands fa-linkedin"></i></a>
+    <a href="">
+   <i class="fa-brands fa-square-instagram"></i></a>
+   <a href="">
+    <i class="fa-solid fa-envelope"></i></a>
+</div>
+</body>
+</html>

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+ <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+ <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+<link rel="stylesheet" href="index.css">
+    <title>Card Generator</title>
+</head>
+<body>
+    <nav>
+    <div class="n-1">
+    <img src="technorift.png" alt="">
+    </div>
+
+    <div class="n-2">
+        <div class="link">
+            <ul>
+                <li><button class="nav-btn" id="n">Admin</button></li>
+                <li class="set"><i class="fa-solid fa-right-from-bracket"></i> Logout</li>
+                <li class="set"><i class="fa-solid fa-gear"></i>Setting</li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    
+
+<div class="container">
+    <div class="tp-butt" style="margin-top: 30px;">
+    <button class="btn btn-primary"><i class="fa-solid fa-plus"></i> Add User</button>
+
+    
+    <button class="btn btn-primary"><i class="fa-solid fa-calculator"></i> Generate Card</button>
+    </div>
+    <div class="addus">
+        
+        <form action="" method="post">
+
+            <label for="" style="display: flex; gap: 320px; color: rgb(52, 138, 196);">
+             <strong>Name</strong>
+             <strong>Email</strong>
+             <strong>Date Of Birth</strong>
+            </label>
+            <div class="in-1">
+           
+            <input type="text" name="name" id="" class="form-control" placeholder="Enter your Name">
+
+          
+            <input type="email" name="email" id="" class="form-control" placeholder="Enter your Email">   
+            
+            
+            
+            <input type="date" name="date" id="" class="form-control" >   
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+            <label for="" style="display: flex; gap: 297px; color: rgb(52, 138, 196);">
+             <strong>Address</strong>
+             <strong>Catagory</strong>
+             <strong>Expiry</strong>
+            </label>
+
+             <div class="in-1">
+
+           
+            <input type="text" name="name" id="" class="form-control" placeholder="Enter your Address">
+
+          
+            <select name="blood" id="" class="form-control" >
+              
+                <option value="">Senior Software Engineer</option>
+
+                <option value="">Web Devolper</option>
+                <option value="">App Developer</option>
+                <option value="">Emploeyey</option>
+                <option value="">Student</option>
+                
+                <option value="">Intern</option>
+            </select> 
+            
+            
+            
+            <input type="date" name="date" id="" class="form-control" >   
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+             <label for="" style="display: flex; gap: 260px; color: rgb(52, 138, 196);">
+             <strong>CNIC Number</strong>
+             <strong>Passport size photo</strong>
+             
+            </label>
+
+             <div class="in-1" style="display: flex; justify-content: left; gap: 20px;">
+           
+            <input type="text" name="name" id="" class="form-control" placeholder="Enter your ID Card Number">
+
+          
+            
+            
+            
+            <input type="file" name="pic" id="" class="form-control" >   
+
+
+
+
+
+
+
+
+            </div>
+        </form>
+
+        <button class="btn btn-primary"><i class="fa-solid fa-plus"></i>  Add Emploeyey</button>
+    </div>
+</div>
+
+
+
+
+
+<div class="container">
+    <div class="portion">
+        <div class="por-card"  style="background: linear-gradient( to right,
+
+
+
+#0575e6
+, 
+#021b79
+);">
+            <div class="tot">
+                <p>Total Employes</p>
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="shower">
+                <h3><strong>29</strong></h3>
+            </div>
+
+            <div class="nu" style="width: 100%; font-size: 26px;">
+                <p>****  ****   ****   ****</p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+         <div class="por-card" style="background: linear-gradient( to right,
+
+
+#780206
+,
+#061161);">
+            <div class="tot">
+                <p>Total Staff</p>
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <div class="shower">
+                <h3><strong>52</strong></h3>
+            </div>
+
+            <div class="nu" style="width: 100%; font-size: 26px;">
+                <p>****  ****   ****   ****</p>
+            </div>
+        </div>
+
+
+
+
+        
+         <div class="por-card" style="background: linear-gradient( to right,
+
+#141e30
+,
+#243b55);">
+            <div class="tot">
+                <p>Total Interns</p>
+             <i class="fa-solid fa-computer"></i>
+            </div>
+            <div class="shower">
+                <h3><strong>19</strong></h3>
+            </div>
+
+            <div class="nu" style="width: 100%; font-size: 26px;">
+                <p>****  ****   ****   ****</p>
+            </div>
+        </div>
+
+
+
+
+        
+         <div class="por-card" style="background: linear-gradient( to right,
+#c33764
+,
+#1d2671);">
+            <div class="tot">
+                <p>Total Students</p>
+            <i class="fa-solid fa-book"></i>
+            </div>
+            <div class="shower">
+                <h3><strong>32</strong></h3>
+            </div>
+
+            <div class="nu" style="width: 100%; font-size: 26px;">
+                <p>****  ****   ****   ****</p>
+            </div>
+        </div>
+    </div>
+
+
+<h6 style=" margin-top: 100px;" >Our Progress Rate of the projects and the forign vevenue assest according to the major dividend.</h6>
+    <div id="myfirstchart" style="height: 250px;"></div>
+
+
+
+<h6>Our Porject Summary and The New Emploeyey Hiring Ratio</h6>
+    <div class="progress" style="margin-top: 40px; gap: 40px;">
+  <div class="progress-bar bg-danger" role="progressbar" style="width: 9%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+
+
+
+<div class="progress" style="margin-top: 30px;">
+  <div class="progress-bar bg-info" role="progressbar" style="width: 53%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress" style="margin-top: 30px;">
+  <div class="progress-bar bg-success" role="progressbar" style="width: 67%" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress" style="margin-top: 30px;">
+  <div class="progress-bar bg-danger" role="progressbar" style="width: 29%" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+
+
+
+
+
+<table class="table table-hover" style="margin-top: 100px;">
+<tr>
+    <th class="bg-primary text-white">Name</th>
+    <th class="bg-primary text-white">Name</th>
+    <th class="bg-primary text-white">Name</th>
+    <th class="bg-primary text-white">Name</th>
+    <th class="bg-primary text-white">Name</th>
+     <th class="bg-primary text-white">Name</th>
+   
+</tr>
+
+
+
+<tr>
+    <td>Bilal Ifzal</td>
+    
+    <td>Bilal Ifzal</td>
+    
+    <td>Bilal Ifzal</td>
+    
+    <td>Bilal Ifzal</td>
+    <td>Bilal Ifzal</td>
+    
+    <td><button class="btn btn-danger">Delete</button> <button class="btn btn-success">Update</button></td>
+</tr>
+
+
+
+<tr>
+    <td>Bilal Ifzal</td>
+    
+    <td>Bilal Ifzal</td>
+    
+    <td>Bilal Ifzal</td>
+    
+    <td>Bilal Ifzal</td>
+    <td>Bilal Ifzal</td>
+    
+    <td><button class="btn btn-danger">Delete</button> <button class="btn btn-success">Update</button></td>
+</tr>
+
+
+
+<tr>
+    <td>Bilal Ifzal</td>
+    
+    <td>Bilal Ifzal</td>
+    
+    <td>Bilal Ifzal</td>
+    
+    <td>Bilal Ifzal</td>
+    <td>Bilal Ifzal</td>
+    
+    <td><button class="btn btn-danger">Delete</button> <button class="btn btn-success">Update</button></td>
+</tr>
+
+
+
+
+<tr>
+    <td>Bilal Ifzal</td>
+    
+    <td>Bilal Ifzal</td>
+    
+    <td>Bilal Ifzal</td>
+    
+    <td>Bilal Ifzal</td>
+    <td>Bilal Ifzal</td>
+    
+    <td><button class="btn btn-danger">Delete</button> <button class="btn btn-success">Update</button></td>
+</tr>
+
+
+
+<tr>
+    <td>Bilal Ifzal</td>
+    
+    <td>Bilal Ifzal</td>
+    
+    <td>Bilal Ifzal</td>
+    
+    <td>Bilal Ifzal</td>
+    <td>Bilal Ifzal</td>
+    
+    <td><button class="btn btn-danger">Delete</button> <button class="btn btn-success">Update</button></td>
+</tr>
+
+</table>
+</div>
+
+
+
+    <footer style="margin-top: 130px;">
+    
+        <div class="footer-1">
+ <h1>TechnoRift</h1>
+        </div>
+         
+        <div class="footer-2">
+            <ul>
+                <li><h3>Company</h3></li>
+                <li><p>Home</p></li>
+                <li><p>About us</p></li>
+                <li><p>Contact us</p></li>
+                <li><p>Featues</p></li>
+            </ul>
+        </div>
+
+
+          <div class="footer-3">
+            <ul>
+                <li><h3>Support</h3></li>
+                <li><p>FAQs</p></li>
+                <li><p>Help Center</p></li>
+                <li><p>Contact Support</p></li>
+            </ul>
+        </div>
+
+
+           <div class="footer-4">
+            <ul>
+                <li><h3>Legal</h3></li>
+                <li><p>privacy Policy</p></li>
+                <li><p>Terms Of Use</p></li>
+                <li><p>Disclaimer</p></li>
+            </ul>
+        </div>
+
+       
+    </footer>
+  
+
+
+      <div class="sub-footer" style="color: white ; text-align: center; background: linear-gradient(to right,
+#212024
+,
+#287a9a ); padding: 10px;" >
+<!-- <hr style="width: 100%; color: white; height: 3px;"> -->
+    <p>All Rights Reserved By M.bilal Ifzal || mbilalifzal82@gmail.com</p>
+
+      <a href="">
+    <i class="fa-brands fa-facebook"></i></a>
+    <a href="">
+    <i class="fa-brands fa-linkedin"></i></a>
+    <a href="">
+   <i class="fa-brands fa-square-instagram"></i></a>
+   <a href="">
+    <i class="fa-solid fa-envelope"></i></a>
+</div>
+
+
+
+
+
+
+
+<script>
+    new Morris.Line({
+  // ID of the element in which to draw the chart.
+  element: 'myfirstchart',
+  // Chart data records -- each entry in this array corresponds to a point on
+  // the chart.
+  data: [
+    { year: '2008', value: 3 },
+    { year: '2009', value: 20 },
+    { year: '2010', value: 1 },
+    { year: '2011', value: 13 },
+    { year: '2012', value: 1 },
+    
+  ],
+  // The name of the data record attribute that contains x-values.
+  xkey: 'year',
+  // A list of names of data record attributes that contain y-values.
+  ykeys: ['value'],
+  // Labels for the ykeys -- will be displayed when you hover over the
+  // chart.
+  labels: ['Value']
+});
+
+
+
+
+
+</script>
+</body>
+</html>
