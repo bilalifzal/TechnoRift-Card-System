@@ -23,6 +23,7 @@ Developed as a task for the Technorift internship program, this project demonstr
 4. Import the provided `database.sql` file to set up the required tables.
 5. Update the connection credentials in your `db_connect.php` file.
 6. Open the project in your browser: `http://localhost/TechnoRift-Card-System`
+7. This was the Local Project for the Internship that is 100% Custom coded .
 
 ## 👨‍💻 Author
 **M. Bilal Ifzal**
