@@ -233,6 +233,7 @@ else{
             width: 70%;
             margin-left:0%;
         }
+    .log button :hover{}
 </style>
 
 
