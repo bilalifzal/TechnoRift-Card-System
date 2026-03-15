@@ -351,6 +351,8 @@ else{
             from { opacity: 1; top: 20px; }
             to { opacity: 0; top: 0; }
         }
+    .data:hover{
+    }
 </style>
 
 
