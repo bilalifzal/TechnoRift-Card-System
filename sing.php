@@ -120,7 +120,7 @@ move_uploaded_file($_FILES['pic']['tmp_name'], "TECHCARD" . $_FILES['pic']['name
 <?php
 
 $query="SELECT COUNT(*) AS total_users FROM user";
-
+// $result=mysqli_query($link,$query);
 $result=mysqli_query($link,$query);
 if($result){
     $row=mysqli_fetch_array($result);
